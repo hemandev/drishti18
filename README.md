@@ -6,13 +6,13 @@ Website for Drishti 2018.
 
 Follow these steps to setup your local development environment
 
-* $ git clone _https://bitbucket.org/NileshPS/drishti_ && cd drishti
+* __$__ git clone _https://github.com/hemanditwiz/drishti18_ && cd drishti
 
-* $ composer install
+* __$__ composer install
 
-* $ php artisan migrate
+* __$__ php artisan migrate
 
-* $ php artisan serve
+* __$__ php artisan serve
 
 
 ## NOTE
