@@ -10,6 +10,8 @@ Follow these steps to setup your local development environment
 
 * __$__ composer install
 
+* __$__ cp .env.example .env  # set all required environment values
+
 * __$__ php artisan migrate
 
 * __$__ php artisan serve
