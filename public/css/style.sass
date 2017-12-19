@@ -1,0 +1,193 @@
+
+$color: red
+$font-size: 12em
+
+.cont
+  position: relative
+  width: 400px
+  transform: rotate(-60deg)
+
+.cont2
+  position: relative
+  width: 400px
+  top: 400px
+  transform: rotate(-100deg)
+
+h1 span
+  font: 26px Monaco, Monospace
+  height: 200px
+  position: absolute
+  transform-origin: bottom center
+  left: 100px
+  top: 100px
+  width: 1px
+
+=rotated-text($class-name, $no-of-letters)
+  $angle-span: 180deg
+  $offset: 0deg
+  $angle-per-char: $angle-span / $no-of-letters
+  @for $i from 1 through $no-of-letters
+    .#{$class-name} .char#{$i}
+      transform: rotate($offset + $angle-per-char * $i)
+      transition: ease-out, .5s
+      &:hover
+        transition: ease-in, .5s
+        color: red
+        font-size: 46px
+
+
++rotated-text(heading, 24)
++rotated-text(heading2, 12)
+body
+  overflow: hidden
+
+.container-fluid
+  position: relative
+  width: 3000px
+  height: 3000px
+  overflow: hidden
+  background-color: #0b2e13
+
+.container
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 200
+
+=circle-element($color:red, $scale: 1, $z-index: 1000)
+  background-color: $color
+  position: fixed
+  z-index: $z-index
+  transition: ease-in .3s
+  width: 80px
+  height: 80px
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  margin: auto
+  border-radius: 50%
+  transform: scale($scale)
+
+
+$blue1: #349FD7
+$blue2: #4dace8
+$blue3: #50C2F8
+$green1: #4EF4C5
+$green2: #4CF39B
+$green3: #4EE266
+$yellow1: #FFDE00
+$yellow2: #FFD002
+$yellow3: #FFBF07
+$orange1: #FF9B39
+$orange2: #FF9229
+$orange3: #F5702F
+$orange4: #F57341
+$red1: #F15651
+$red2: #E34E48
+$violet1: #D74171
+$violet2: #C041A5
+$violet3: #A83593
+
+button
+  transform: scale(.2)
+  position: fixed
+  top: 100px
+  width: 200px
+  height: 200px
+  z-index: 100000
+  font-size: 50px
+
+.circle1
+  +circle-element(white, 6.2, 1000)
+  h1
+    font-size: 12px
+
+
+.circle2
+  +circle-element($blue1, 8.3, 900)
+
+.circle3
+  +circle-element($blue2, 10.3, 800)
+
+.circle4
+  +circle-element($blue3, 12.3, 799)
+
+.circle5
+  +circle-element($green1, 14.3, 780)
+
+.circle6
+  +circle-element($green2, 16.3, 770)
+
+.circle7
+  +circle-element($green3, 18.3, 760)
+
+.circle8
+  +circle-element($yellow1, 20.3, 750)
+
+.circle9
+  +circle-element($yellow2, 22.3, 740)
+
+.circle10
+  +circle-element($yellow3, 24.3, 730)
+
+.circle11
+  +circle-element($orange1, 26.3, 720)
+
+.circle12
+  +circle-element($orange2, 28.3, 710)
+
+.circle13
+  +circle-element($orange3, 30.3, 700)
+
+.circle14
+  +circle-element($orange4, 32.3, 690)
+
+.circle15
+  +circle-element($red1, 34.3, 680)
+
+.circle16
+  +circle-element($red2, 36.3, 670)
+
+.circle17
+  +circle-element($violet1, 38.3, 660)
+
+.circle18
+  +circle-element($violet2, 40.3, 650)
+
+.circle19
+  +circle-element($violet3, 42.3, 640)
+
+
+
+@import "mobile"
+
+
+.anim
+  transition: ease-in .3s
+  transform: scale(0)
+
+.anim1
+  transition: ease-in .3s
+  transform: scale(6.3)
+
+.anim2
+  transition: ease-in .3s
+  transform: scale(8.3)
+
+.anim3
+  transition: ease-in .3s
+  transform: scale(10.3)
+.anim4
+  transition: ease-in .3s
+  transform: scale(12.3)
+.anim5
+  transition: ease-in .3s
+  transform: scale(14.3)
+.anim6
+  transition: ease-in .3s
+  transform: scale(16.3)
+
+.anim7
+  transition: ease-in .3s
+  transform: scale(18.3)
