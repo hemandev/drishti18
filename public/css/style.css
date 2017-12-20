@@ -1,340 +1,568 @@
 .cont {
   position: relative;
   width: 400px;
-  transform: rotate(-60deg); }
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
 
 .cont2 {
   position: relative;
   width: 400px;
   top: 400px;
-  transform: rotate(-100deg); }
+  -webkit-transform: rotate(-100deg);
+          transform: rotate(-100deg);
+}
 
 h1 span {
   font: 26px Monaco, Monospace;
   height: 200px;
   position: absolute;
-  transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
   left: 100px;
   top: 100px;
-  width: 1px; }
+  width: 1px;
+}
 
 .heading .char1 {
-  transform: rotate(7.5deg);
-  transition: ease-out, .5s; }
-  .heading .char1:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(7.5deg);
+          transform: rotate(7.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char1:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char2 {
-  transform: rotate(15deg);
-  transition: ease-out, .5s; }
-  .heading .char2:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char2:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char3 {
-  transform: rotate(22.5deg);
-  transition: ease-out, .5s; }
-  .heading .char3:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(22.5deg);
+          transform: rotate(22.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char3:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char4 {
-  transform: rotate(30deg);
-  transition: ease-out, .5s; }
-  .heading .char4:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char4:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char5 {
-  transform: rotate(37.5deg);
-  transition: ease-out, .5s; }
-  .heading .char5:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(37.5deg);
+          transform: rotate(37.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char5:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char6 {
-  transform: rotate(45deg);
-  transition: ease-out, .5s; }
-  .heading .char6:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char6:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char7 {
-  transform: rotate(52.5deg);
-  transition: ease-out, .5s; }
-  .heading .char7:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(52.5deg);
+          transform: rotate(52.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char7:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char8 {
-  transform: rotate(60deg);
-  transition: ease-out, .5s; }
-  .heading .char8:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char8:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char9 {
-  transform: rotate(67.5deg);
-  transition: ease-out, .5s; }
-  .heading .char9:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(67.5deg);
+          transform: rotate(67.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char9:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char10 {
-  transform: rotate(75deg);
-  transition: ease-out, .5s; }
-  .heading .char10:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char10:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char11 {
-  transform: rotate(82.5deg);
-  transition: ease-out, .5s; }
-  .heading .char11:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(82.5deg);
+          transform: rotate(82.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char11:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char12 {
-  transform: rotate(90deg);
-  transition: ease-out, .5s; }
-  .heading .char12:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char12:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char13 {
-  transform: rotate(97.5deg);
-  transition: ease-out, .5s; }
-  .heading .char13:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(97.5deg);
+          transform: rotate(97.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char13:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char14 {
-  transform: rotate(105deg);
-  transition: ease-out, .5s; }
-  .heading .char14:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char14:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char15 {
-  transform: rotate(112.5deg);
-  transition: ease-out, .5s; }
-  .heading .char15:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(112.5deg);
+          transform: rotate(112.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char15:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char16 {
-  transform: rotate(120deg);
-  transition: ease-out, .5s; }
-  .heading .char16:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char16:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char17 {
-  transform: rotate(127.5deg);
-  transition: ease-out, .5s; }
-  .heading .char17:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(127.5deg);
+          transform: rotate(127.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char17:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char18 {
-  transform: rotate(135deg);
-  transition: ease-out, .5s; }
-  .heading .char18:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char18:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char19 {
-  transform: rotate(142.5deg);
-  transition: ease-out, .5s; }
-  .heading .char19:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(142.5deg);
+          transform: rotate(142.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char19:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char20 {
-  transform: rotate(150deg);
-  transition: ease-out, .5s; }
-  .heading .char20:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char20:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char21 {
-  transform: rotate(157.5deg);
-  transition: ease-out, .5s; }
-  .heading .char21:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(157.5deg);
+          transform: rotate(157.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char21:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char22 {
-  transform: rotate(165deg);
-  transition: ease-out, .5s; }
-  .heading .char22:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(165deg);
+          transform: rotate(165deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char22:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char23 {
-  transform: rotate(172.5deg);
-  transition: ease-out, .5s; }
-  .heading .char23:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(172.5deg);
+          transform: rotate(172.5deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char23:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading .char24 {
-  transform: rotate(180deg);
-  transition: ease-out, .5s; }
-  .heading .char24:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading .char24:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char1 {
-  transform: rotate(15deg);
-  transition: ease-out, .5s; }
-  .heading2 .char1:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char1:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char2 {
-  transform: rotate(30deg);
-  transition: ease-out, .5s; }
-  .heading2 .char2:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char2:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char3 {
-  transform: rotate(45deg);
-  transition: ease-out, .5s; }
-  .heading2 .char3:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char3:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char4 {
-  transform: rotate(60deg);
-  transition: ease-out, .5s; }
-  .heading2 .char4:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char4:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char5 {
-  transform: rotate(75deg);
-  transition: ease-out, .5s; }
-  .heading2 .char5:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char5:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char6 {
-  transform: rotate(90deg);
-  transition: ease-out, .5s; }
-  .heading2 .char6:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char6:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char7 {
-  transform: rotate(105deg);
-  transition: ease-out, .5s; }
-  .heading2 .char7:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char7:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char8 {
-  transform: rotate(120deg);
-  transition: ease-out, .5s; }
-  .heading2 .char8:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char8:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char9 {
-  transform: rotate(135deg);
-  transition: ease-out, .5s; }
-  .heading2 .char9:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char9:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char10 {
-  transform: rotate(150deg);
-  transition: ease-out, .5s; }
-  .heading2 .char10:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char10:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char11 {
-  transform: rotate(165deg);
-  transition: ease-out, .5s; }
-  .heading2 .char11:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(165deg);
+          transform: rotate(165deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char11:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 .heading2 .char12 {
-  transform: rotate(180deg);
-  transition: ease-out, .5s; }
-  .heading2 .char12:hover {
-    transition: ease-in, .5s;
-    color: red;
-    font-size: 46px; }
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: ease-out, .5s;
+  transition: ease-out, .5s;
+}
+
+.heading2 .char12:hover {
+  -webkit-transition: ease-in, .5s;
+  transition: ease-in, .5s;
+  color: red;
+  font-size: 46px;
+}
 
 body {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .container-fluid {
   position: relative;
   width: 3000px;
   height: 3000px;
   overflow: hidden;
-  background-color: #0b2e13; }
+  background-color: #0b2e13;
+}
 
 .container {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 200; }
+  z-index: 200;
+}
 
 button {
-  transform: scale(0.2);
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
   position: fixed;
   top: 100px;
   width: 200px;
   height: 200px;
   z-index: 100000;
-  font-size: 50px; }
+  font-size: 50px;
+}
 
 .circle1 {
   background-color: white;
   position: fixed;
   z-index: 1000;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -344,14 +572,19 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(6.2); }
-  .circle1 h1 {
-    font-size: 12px; }
+  -webkit-transform: scale(6.2);
+          transform: scale(6.2);
+}
+
+.circle1 h1 {
+  font-size: 12px;
+}
 
 .circle2 {
   background-color: #349FD7;
   position: fixed;
   z-index: 900;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -361,12 +594,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(8.3); }
+  -webkit-transform: scale(8.3);
+          transform: scale(8.3);
+}
 
 .circle3 {
   background-color: #4dace8;
   position: fixed;
   z-index: 800;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -376,12 +612,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(10.3); }
+  -webkit-transform: scale(10.3);
+          transform: scale(10.3);
+}
 
 .circle4 {
   background-color: #50C2F8;
   position: fixed;
   z-index: 799;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -391,12 +630,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(12.3); }
+  -webkit-transform: scale(12.3);
+          transform: scale(12.3);
+}
 
 .circle5 {
   background-color: #4EF4C5;
   position: fixed;
   z-index: 780;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -406,12 +648,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(14.3); }
+  -webkit-transform: scale(14.3);
+          transform: scale(14.3);
+}
 
 .circle6 {
   background-color: #4CF39B;
   position: fixed;
   z-index: 770;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -421,12 +666,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(16.3); }
+  -webkit-transform: scale(16.3);
+          transform: scale(16.3);
+}
 
 .circle7 {
   background-color: #4EE266;
   position: fixed;
   z-index: 760;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -436,12 +684,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(18.3); }
+  -webkit-transform: scale(18.3);
+          transform: scale(18.3);
+}
 
 .circle8 {
   background-color: #FFDE00;
   position: fixed;
   z-index: 750;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -451,12 +702,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(20.3); }
+  -webkit-transform: scale(20.3);
+          transform: scale(20.3);
+}
 
 .circle9 {
   background-color: #FFD002;
   position: fixed;
   z-index: 740;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -466,12 +720,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(22.3); }
+  -webkit-transform: scale(22.3);
+          transform: scale(22.3);
+}
 
 .circle10 {
   background-color: #FFBF07;
   position: fixed;
   z-index: 730;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -481,12 +738,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(24.3); }
+  -webkit-transform: scale(24.3);
+          transform: scale(24.3);
+}
 
 .circle11 {
   background-color: #FF9B39;
   position: fixed;
   z-index: 720;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -496,12 +756,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(26.3); }
+  -webkit-transform: scale(26.3);
+          transform: scale(26.3);
+}
 
 .circle12 {
   background-color: #FF9229;
   position: fixed;
   z-index: 710;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -511,12 +774,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(28.3); }
+  -webkit-transform: scale(28.3);
+          transform: scale(28.3);
+}
 
 .circle13 {
   background-color: #F5702F;
   position: fixed;
   z-index: 700;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -526,12 +792,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(30.3); }
+  -webkit-transform: scale(30.3);
+          transform: scale(30.3);
+}
 
 .circle14 {
   background-color: #F57341;
   position: fixed;
   z-index: 690;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -541,12 +810,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(32.3); }
+  -webkit-transform: scale(32.3);
+          transform: scale(32.3);
+}
 
 .circle15 {
   background-color: #F15651;
   position: fixed;
   z-index: 680;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -556,12 +828,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(34.3); }
+  -webkit-transform: scale(34.3);
+          transform: scale(34.3);
+}
 
 .circle16 {
   background-color: #E34E48;
   position: fixed;
   z-index: 670;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -571,12 +846,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(36.3); }
+  -webkit-transform: scale(36.3);
+          transform: scale(36.3);
+}
 
 .circle17 {
   background-color: #D74171;
   position: fixed;
   z-index: 660;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -586,12 +864,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(38.3); }
+  -webkit-transform: scale(38.3);
+          transform: scale(38.3);
+}
 
 .circle18 {
   background-color: #C041A5;
   position: fixed;
   z-index: 650;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -601,12 +882,15 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(40.3); }
+  -webkit-transform: scale(40.3);
+          transform: scale(40.3);
+}
 
 .circle19 {
   background-color: #A83593;
   position: fixed;
   z-index: 640;
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
   width: 80px;
   height: 80px;
@@ -616,13 +900,16 @@ button {
   right: 0;
   margin: auto;
   border-radius: 50%;
-  transform: scale(42.3); }
+  -webkit-transform: scale(42.3);
+          transform: scale(42.3);
+}
 
 @media screen and (max-width: 481px) {
   .circle1 {
     background-color: white;
     position: fixed;
     z-index: 1000;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -632,11 +919,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(6.2); }
+    -webkit-transform: scale(6.2);
+            transform: scale(6.2);
+  }
+
   .circle2 {
     background-color: #349FD7;
     position: fixed;
     z-index: 900;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -646,11 +937,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(8.3); }
+    -webkit-transform: scale(8.3);
+            transform: scale(8.3);
+  }
+
   .circle3 {
     background-color: #4dace8;
     position: fixed;
     z-index: 800;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -660,11 +955,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(10.3); }
+    -webkit-transform: scale(10.3);
+            transform: scale(10.3);
+  }
+
   .circle4 {
     background-color: #50C2F8;
     position: fixed;
     z-index: 799;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -674,11 +973,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(12.3); }
+    -webkit-transform: scale(12.3);
+            transform: scale(12.3);
+  }
+
   .circle5 {
     background-color: #4EF4C5;
     position: fixed;
     z-index: 780;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -688,11 +991,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(14.3); }
+    -webkit-transform: scale(14.3);
+            transform: scale(14.3);
+  }
+
   .circle6 {
     background-color: #4CF39B;
     position: fixed;
     z-index: 770;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -702,11 +1009,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(16.3); }
+    -webkit-transform: scale(16.3);
+            transform: scale(16.3);
+  }
+
   .circle7 {
     background-color: #4EE266;
     position: fixed;
     z-index: 760;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -716,11 +1027,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(18.3); }
+    -webkit-transform: scale(18.3);
+            transform: scale(18.3);
+  }
+
   .circle8 {
     background-color: #FFDE00;
     position: fixed;
     z-index: 750;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -730,11 +1045,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(20.3); }
+    -webkit-transform: scale(20.3);
+            transform: scale(20.3);
+  }
+
   .circle9 {
     background-color: #FFD002;
     position: fixed;
     z-index: 740;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -744,11 +1063,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(22.3); }
+    -webkit-transform: scale(22.3);
+            transform: scale(22.3);
+  }
+
   .circle10 {
     background-color: #FFBF07;
     position: fixed;
     z-index: 730;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -758,11 +1081,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(24.3); }
+    -webkit-transform: scale(24.3);
+            transform: scale(24.3);
+  }
+
   .circle11 {
     background-color: #FF9B39;
     position: fixed;
     z-index: 720;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -772,11 +1099,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(26.3); }
+    -webkit-transform: scale(26.3);
+            transform: scale(26.3);
+  }
+
   .circle12 {
     background-color: #FF9229;
     position: fixed;
     z-index: 710;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -786,11 +1117,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(28.3); }
+    -webkit-transform: scale(28.3);
+            transform: scale(28.3);
+  }
+
   .circle13 {
     background-color: #F5702F;
     position: fixed;
     z-index: 700;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -800,11 +1135,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(30.3); }
+    -webkit-transform: scale(30.3);
+            transform: scale(30.3);
+  }
+
   .circle14 {
     background-color: #F57341;
     position: fixed;
     z-index: 690;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -814,11 +1153,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(32.3); }
+    -webkit-transform: scale(32.3);
+            transform: scale(32.3);
+  }
+
   .circle15 {
     background-color: #F15651;
     position: fixed;
     z-index: 680;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -828,11 +1171,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(34.3); }
+    -webkit-transform: scale(34.3);
+            transform: scale(34.3);
+  }
+
   .circle16 {
     background-color: #E34E48;
     position: fixed;
     z-index: 670;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -842,11 +1189,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(36.3); }
+    -webkit-transform: scale(36.3);
+            transform: scale(36.3);
+  }
+
   .circle17 {
     background-color: #D74171;
     position: fixed;
     z-index: 660;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -856,11 +1207,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(38.3); }
+    -webkit-transform: scale(38.3);
+            transform: scale(38.3);
+  }
+
   .circle18 {
     background-color: #C041A5;
     position: fixed;
     z-index: 650;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -870,11 +1225,15 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(40.3); }
+    -webkit-transform: scale(40.3);
+            transform: scale(40.3);
+  }
+
   .circle19 {
     background-color: #A83593;
     position: fixed;
     z-index: 640;
+    -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
     width: 80px;
     height: 80px;
@@ -884,36 +1243,64 @@ button {
     right: 0;
     margin: auto;
     border-radius: 50%;
-    transform: scale(42.3); } }
+    -webkit-transform: scale(42.3);
+            transform: scale(42.3);
+  }
+}
 
 .anim {
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  transform: scale(0); }
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
 
 .anim1 {
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  transform: scale(6.3); }
+  -webkit-transform: scale(6.3);
+          transform: scale(6.3);
+}
 
 .anim2 {
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  transform: scale(8.3); }
+  -webkit-transform: scale(8.3);
+          transform: scale(8.3);
+}
 
 .anim3 {
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  transform: scale(10.3); }
+  -webkit-transform: scale(10.3);
+          transform: scale(10.3);
+}
 
 .anim4 {
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  transform: scale(12.3); }
+  -webkit-transform: scale(12.3);
+          transform: scale(12.3);
+}
 
 .anim5 {
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  transform: scale(14.3); }
+  -webkit-transform: scale(14.3);
+          transform: scale(14.3);
+}
 
 .anim6 {
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  transform: scale(16.3); }
+  -webkit-transform: scale(16.3);
+          transform: scale(16.3);
+}
 
 .anim7 {
+  -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  transform: scale(18.3); }
+  -webkit-transform: scale(18.3);
+          transform: scale(18.3);
+}
+

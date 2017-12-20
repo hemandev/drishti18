@@ -6,9 +6,13 @@ Website for Drishti 2018.
 
 Follow these steps to setup your local development environment
 
-* __$__ git clone _https://github.com/hemanditwiz/drishti18_ && cd drishti
+* __$__ git clone _https://github.com/hemanditwiz/drishti18_ && cd drishti18
 
-* __$__ composer install
+* __$__ composer install # Install PHP packages
+
+* __$__ npm install # Install node packages for css,js preprocessors
+
+* __$__ cd public && bower install # Install front-end dependencies
 
 * __$__ cp .env.example .env  # set all required environment values
 
@@ -22,6 +26,8 @@ Follow these steps to setup your local development environment
 * Use migrations for schema changes.
 
 * DO NOT add your .env file to git.
+
+* DO NOT add compiled/generated files to git.
 
 * Always apply the latest migrations after pulling changes from remote repo.
 

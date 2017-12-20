@@ -1,95 +1,140 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
 
-        <title>Laravel</title>
+@section('title', 'Drishti-18')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+@section('content')
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+    <!--
+    <div class="cont">
+        <h1 class="heading">Established 2012</h1>
+    </div>
 
-            .full-height {
-                height: 100vh;
-            }
+    <div class="cont2">
+        <h1 class="heading2">Good Morning</h1>
+    </div>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <div class="container-fluid">
+        <div class="container">
+        <button id="click" class="btn btn-primary">
+            Click
+        </button>
+    </div>
+    </div>
+    -->
 
-            .position-ref {
-                position: relative;
-            }
+    <button id="click" class="btn btn-primary">Click</button>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+    <div class="circle1 text-center">
 
-            .content {
-                text-align: center;
-            }
+        <h1> Hello</h1>
 
-            .title {
-                font-size: 84px;
-            }
+        <br>
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+    </div>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+    <div class="circle2">
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+    </div>
+
+    <div class="circle3">
+
+
+    </div>
+
+    <div class="circle4">
+
+
+    </div>
+
+    <div class="circle5">
+
+
+    </div>
+
+    <div class="circle6">
+
+
+    </div>
+
+    <div class="circle7">
+
+
+    </div>
+
+    <div class="circle8">
+
+
+    </div>
+
+    <div class="circle8">
+
+
+    </div>
+
+    <div class="circle9">
+
+
+    </div>
+
+
+    <div class="circle10">
+
+
+    </div>
+
+
+    <div class="circle11">
+
+
+    </div>
+
+
+    <div class="circle12">
+
+
+    </div>
+
+
+    <div class="circle13">
+
+
+    </div>
+
+
+    <div class="circle14">
+
+
+    </div>
+
+
+    <div class="circle15">
+
+
+    </div>
+
+
+    <div class="circle16">
+
+
+    </div>
+
+
+    <div class="circle17">
+
+
+    </div>
+
+
+    <div class="circle18">
+
+
+    </div>
+    <div class="circle19">
+
+
+    </div>
+
+    <script src="bower_components/popper.js/dist/popper.min.js"></script>
+
+@endsection

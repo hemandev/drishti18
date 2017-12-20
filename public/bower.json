@@ -1,0 +1,23 @@
+{
+  "name": "cet-drishti",
+  "homepage": "https://github.com/hemanditwiz/drishti18",
+  "authors": [
+    "Nilesh PS <nps17thatsme@gmail.com>"
+  ],
+  "description": "Front end for drishti tech fest.",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "letteringjs": "^0.7.0",
+    "bootstrap": "^3.3.7",
+    "popper.js": "^1.12.9"
+  }
+}
