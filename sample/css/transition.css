@@ -1,0 +1,17 @@
+#img_frame{
+	top:0;
+	left:0;
+	position:fixed;
+	min-width: 100%;
+	height: auto;
+}
+
+.hidden{
+	display : none;
+}
+
+#details{
+	background-color: green;
+	min-width: 100%;
+	height: auto;
+}
