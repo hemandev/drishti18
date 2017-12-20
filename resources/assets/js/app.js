@@ -9,7 +9,10 @@ require('./bootstrap');
 require('bootstrap');
 require('letteringjs');
 require('popper.js');
-
+require('./lodash');
+require('./velocity');
+require('./main');
+require('./skrollr.min');
 // Load custom written scripts
 require('./main-circle-anim-trigger');
 

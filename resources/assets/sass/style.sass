@@ -1,74 +1,5 @@
-
 $color: red
 $font-size: 12em
-
-.cont
-  position: relative
-  width: 400px
-  transform: rotate(-60deg)
-
-.cont2
-  position: relative
-  width: 400px
-  top: 400px
-  transform: rotate(-100deg)
-
-h1 span
-  font: 26px Monaco, Monospace
-  height: 200px
-  position: absolute
-  transform-origin: bottom center
-  left: 100px
-  top: 100px
-  width: 1px
-
-=rotated-text($class-name, $no-of-letters)
-  $angle-span: 180deg
-  $offset: 0deg
-  $angle-per-char: $angle-span / $no-of-letters
-  @for $i from 1 through $no-of-letters
-    .#{$class-name} .char#{$i}
-      transform: rotate($offset + $angle-per-char * $i)
-      transition: ease-out, .5s
-      &:hover
-        transition: ease-in, .5s
-        color: red
-        font-size: 46px
-
-
-+rotated-text(heading, 24)
-+rotated-text(heading2, 12)
-body
-  overflow: hidden
-
-.container-fluid
-  position: relative
-  width: 3000px
-  height: 3000px
-  overflow: hidden
-  background-color: #0b2e13
-
-.container
-  position: absolute
-  top: 0
-  left: 0
-  z-index: 200
-
-=circle-element($color:red, $scale: 1, $z-index: 1000)
-  background-color: $color
-  position: fixed
-  z-index: $z-index
-  transition: ease-in .3s
-  width: 80px
-  height: 80px
-  top: 0
-  left: 0
-  bottom: 0
-  right: 0
-  margin: auto
-  border-radius: 50%
-  transform: scale($scale)
-
 
 $blue1: #349FD7
 $blue2: #4dace8
@@ -89,20 +20,176 @@ $violet1: #D74171
 $violet2: #C041A5
 $violet3: #A83593
 
-button
-  transform: scale(.2)
+.big-container
   position: fixed
-  top: 100px
-  width: 200px
+  z-index: 10000
+
+.another-cont
+  width: 10000px
+  height: 10000px
+  overflow: hidden
+  position: fixed
+  z-index: 1000000000
+  background-color: #1d1f21
+
+@import "loader"
+
+#prev
+  cursor: pointer
+
+#next
+  cursor: pointer
+
+.cont
+  position: relative
+  width: 400px
+  transform: rotate(-60deg)
+
+.img
+  position: fixed
+  left: 25px
+  top: 25px
+  margin: auto
+  z-index: 1000000
+  transition: ease-out, 300ms
+  transform: scale(1)
+  &:hover
+    transition: ease-in 300ms
+    transform: scale(1.1)
+
+#bt
+  background: none
+  position: fixed
+  bottom: 30px
+  right: 0px
+  left: 0
+  z-index: 1000000000
+  width: 48px
+  height: 48px
+  border: none
+  margin: auto
+  text-decoration: none
+  &:focus
+    outline: 0
+
+#bt2
+  background: none
+  position: fixed
+  top: 30px
+  right: 0
+  left: 0
+  z-index: 1000000000
+  width: 48px
+  height: 48px
+  border: none
+  margin: auto
+  text-decoration: none
+  &:focus
+    outline: 0
+
+.fa .fa-arrow-down
+  color: #ffffff
+
+.cont2
+  position: relative
+  width: 400px
+  top: 400px
+  transform: rotate(-100deg)
+
+h1 span
+  font: 26px Monaco, Monospace
   height: 200px
-  z-index: 100000
-  font-size: 50px
+  position: absolute
+  transform-origin: bottom center
+  left: 100px
+  top: 100px
+  width: 1px
+
+.fa .fa-bars
+  color: #2c2c2c
+  position: relative
+  margin-top: 10px
+  vertical-align: -70%
+  top: 50%
+
+.fa-lg
+  vertical-align: -80%
+
+=rotated-text($class-name, $no-of-letters)
+  $angle-span: 180deg
+  $offset: 0deg
+  $angle-per-char: $angle-span / $no-of-letters
+  @for $i from 1 through $no-of-letters
+    .#{$class-name} .char#{$i}
+      transform: rotate($offset + $angle-per-char * $i)
+      -webkit-transform: rotate($offset + $angle-per-char * $i)
+      -moz-transform: rotate($offset + $angle-per-char * $i)
+      -ms-transform: rotate($offset + $angle-per-char * $i)
+      -o-transform: rotate($offset + $angle-per-char * $i)
+      transition: ease-out, .4s
+      &:hover
+        transition: ease-out, .4s
+        color: red
+        font-size: 46px
+
++rotated-text(heading, 24)
++rotated-text(heading2, 12)
+body
+  overflow: hidden
+  background-color: $violet3
+
+.container-fluid
+  position: relative
+  width: 3000px
+  height: 3000px
+  overflow: hidden
+  background-color: #0b2e13
+
+.container
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 200
+
+=circle-element($color:red, $scale: 1, $z-index: 1000)
+  background-color: $color
+  position: fixed
+  z-index: $z-index
+  transition: ease-out .4s
+  width: 80px
+  height: 80px
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  margin: auto
+  border-radius: 50%
+  transform: scale($scale)
+
+=fab($offset-top: 0, $offset-bottom: 0)
+  position: fixed
+  top: $offset-top
+  bottom: $offset-bottom
+  right: 45px
+  z-index: 1000000000
+  border-radius: 50%
+  width: 48px
+  height: 48px
+  margin: auto
+  background-color: white
+  cursor: pointer
+
+.ham-fab
+  +fab(0, 0)
+
+.fb-fab
+  +fab(150px, 0)
+
+.insta-fab
+  +fab(0,150px)
 
 .circle1
   +circle-element(white, 6.2, 1000)
-  h1
-    font-size: 12px
-
 
 .circle2
   +circle-element($blue1, 8.3, 900)
@@ -158,36 +245,36 @@ button
 .circle19
   +circle-element($violet3, 42.3, 640)
 
-
-
 @import "mobile"
 
-
 .anim
-  transition: ease-in .3s
+  transition: ease-out .4s
   transform: scale(0)
 
 .anim1
-  transition: ease-in .3s
+  transition: ease-out .4s 10ms
   transform: scale(6.3)
 
 .anim2
-  transition: ease-in .3s
+  transition: ease-out .4s 20ms
   transform: scale(8.3)
 
 .anim3
-  transition: ease-in .3s
+  transition: ease-out .4s 30ms
   transform: scale(10.3)
+
 .anim4
-  transition: ease-in .3s
+  transition: ease-out .4s 40ms
   transform: scale(12.3)
+
 .anim5
-  transition: ease-in .3s
+  transition: ease-out .4s 50ms
   transform: scale(14.3)
+
 .anim6
-  transition: ease-in .3s
+  transition: ease-out .4s 60ms
   transform: scale(16.3)
 
 .anim7
-  transition: ease-in .3s
+  transition: ease-out .4s 70ms
   transform: scale(18.3)
