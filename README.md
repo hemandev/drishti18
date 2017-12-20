@@ -8,15 +8,15 @@ Follow these steps to setup your local development environment
 
 * __$__ git clone _https://github.com/hemanditwiz/drishti18_ && cd drishti18
 
-* __$__ composer install # Install PHP packages
+* __$__ composer install       # Install PHP packages
 
-* __$__ npm install # Install node packages for css,js preprocessors
+* __$__ npm install            # Install node packages for css,js preprocessors
 
-* __$__ cd public && bower install # Install front-end dependencies
-
-* __$__ cp .env.example .env  # set all required environment values
+* __$__ cp .env.example .env   # set all required environment values
 
 * __$__ php artisan migrate
+
+* __$__ npm run dev            # For watching for changes, run _npm run watch_
 
 * __$__ php artisan serve
 

@@ -135,6 +135,4 @@
 
     </div>
 
-    <script src="bower_components/popper.js/dist/popper.min.js"></script>
-
 @endsection
