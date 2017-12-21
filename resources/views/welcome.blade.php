@@ -26,177 +26,132 @@
     </div>
     </div>
 -->
-<div class="another-cont">
-<div class="sk-cube-grid">
-    <div class="sk-cube sk-cube1"></div>
-    <div class="sk-cube sk-cube2"></div>
-    <div class="sk-cube sk-cube3"></div>
-    <div class="sk-cube sk-cube4"></div>
-    <div class="sk-cube sk-cube5"></div>
-    <div class="sk-cube sk-cube6"></div>
-    <div class="sk-cube sk-cube7"></div>
-    <div class="sk-cube sk-cube8"></div>
-    <div class="sk-cube sk-cube9"></div>
-</div>
 
+<div class="another-cont">
+    <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
 </div>
 
 <div class="big-container">
+    <div class="ham-fab text-center">
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+    </div>
 
-<div class="ham-fab text-center">
+    <div class="fb-fab text-center">
+         <a href="http://www.facebook.com/cetdrishti" target="_blank">  <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> </a>
+    </div>
 
-    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-
-
-</div>
-
-<div class="fb-fab text-center">
-
- <a href="www.facebook.com/cetdrishti" target="_blank">  <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> </a>
-
-
-</div>
-
-<div class="insta-fab text-center">
-
-    <a href="www.instagram.com/cetdrishti" target="_blank" > <i class="fa fa-instagram fa-lg" aria-hidden="true"></i> </a>
-
-
-</div>
+    <div class="insta-fab text-center">
+        <a href="http://www.instagram.com/cetdrishti" target="_blank" > <i class="fa fa-instagram fa-lg" aria-hidden="true"></i> </a>
+    </div>
 
 
 
 
-<a href="#">
-<img class="img" src="logo2.png">
-</a>
+    <a href="#">
+        <img class="img" src="images/logo2.png">
+    </a>
 
-<button id="bt">
-    <i  id="next" class="fa fa-arrow-down fa-2x" style="color: #f0f0f0" aria-hidden="true"></i>
-</button>
+    <button id="bt">
+        <i  id='next' class="fa fa-arrow-down fa-2x" style="color: #f0f0f0" aria-hidden="true"></i>
+    </button>
 
-<button id="bt2">
-    <i id="prev" class="fa fa-arrow-up fa-2x" style="color: #F0F0F0" aria-hidden="true"></i>
-</button>
-
-
+    <button id="btn2">
+        <i  id='prev' class="fa fa-arrow-up fa-2x" style="color: #F0F0F0" aria-hidden="true"></i>
+    </button>
 
 
-<div class="circle1 text-center">
+
+
+    <div class="circle1 text-center">
+
+    </div>
+    <div class="circle2">
+
+
+    </div>
+    <div class="circle3">
+
+
+    </div>
+    <div class="circle4">
+
+
+    </div>
+    <div class="circle5">
+
+
+    </div>
+    <div class="circle6">
+
+
+    </div>
+    <div class="circle7">
+
+
+    </div>
+    <div class="circle8">
+
+
+    </div>
+    <div class="circle8">
+
+
+    </div>
+    <div class="circle9">
+
+
+    </div>
+    <div class="circle10">
+
+
+    </div>
+    <div class="circle11">
+
+
+    </div>
+    <div class="circle12">
+
+
+    </div>
+    <div class="circle13">
+
+
+    </div>
+    <div class="circle14">
+
+
+    </div>
+    <div class="circle15">
+
+
+    </div>
+    <div class="circle16">
+
+
+    </div>
+    <div class="circle17">
+
+
+    </div>
+    <div class="circle18">
+
+
+    </div>
+    <div class="circle19">
 
 
     </div>
 
-<div class="circle2">
-
-
-</div>
-
-<div class="circle3">
-
-
-</div>
-
-<div class="circle4">
-
-
-</div>
-
-<div class="circle5">
-
-
-</div>
-
-<div class="circle6">
-
-
-</div>
-
-<div class="circle7">
-
-
-</div>
-
-<div class="circle8">
-
-
-</div>
-
-<div class="circle8">
-
-
-</div>
-
-<div class="circle9">
-
-
-</div>
-
-
-<div class="circle10">
-
-
-</div>
-
-
-<div class="circle11">
-
-
-</div>
-
-
-<div class="circle12">
-
-
-</div>
-
-
-<div class="circle13">
-
-
-</div>
-
-
-<div class="circle14">
-
-
-</div>
-
-
-<div class="circle15">
-
-
-</div>
-
-
-<div class="circle16">
-
-
-</div>
-
-
-<div class="circle17">
-
-
-</div>
-
-
-<div class="circle18">
-
-
-</div>
-
-
-<div class="circle19">
-
-
-</div>
-
-</div>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/71779d9902.js"></script>
+</div> <!-- // big-container -->
 
 @endsection

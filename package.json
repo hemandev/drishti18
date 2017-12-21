@@ -20,6 +20,8 @@
     "dependencies": {
         "bootstrap": "^3.3.7",
         "letteringjs": "^0.7.0",
-        "popper.js": "^1.12.9"
+        "popper.js": "^1.12.9",
+        "skrollr": "^0.6.26",
+        "velocity-animate": "^1.5.0"
     }
 }

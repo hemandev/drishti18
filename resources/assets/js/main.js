@@ -1,9 +1,7 @@
-
 $(window).on('load', function () {
 
 
-  $('.another-cont').fadeOut('slow')
-
+    $('.another-cont').fadeOut('slow')
 
 
     var scale = {
@@ -183,14 +181,14 @@ $(window).on('load', function () {
     })
 
 
-    $('#next').click(function () {
+    $('#prev').click(function () {
 
 
         scaleDown()
 
     })
 
-    $('#prev').click(function () {
+    $('#next').click(function () {
 
         scaleUp()
 
@@ -202,8 +200,7 @@ $(window).on('load', function () {
         if (event.originalEvent.deltaY < -200) {
             console.log("up" + event.originalEvent.deltaY)
 
-             scaleUp()
-
+            scaleUp()
 
 
             // wheeled up
@@ -217,4 +214,4 @@ $(window).on('load', function () {
     }, 600));
 
 
-})
+});
