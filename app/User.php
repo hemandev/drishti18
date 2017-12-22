@@ -9,6 +9,6 @@ class User extends Model
     protected $primaryKey = 'user_id';
 
     public function registeredWorkshops() {
-        return $this->hasMany('App\Registrations', 'user_id');
+        return $this->hasMany('App\Registration', 'user_id');
     }
 }

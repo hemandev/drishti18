@@ -20,4 +20,5 @@ Route::get('/login/callback', 'AuthController@callback');
 
 Route::middleware(['facebook_auth'])->group(function() {
     Route::get('/dashboard', 'DashboardController@index');
+    Route::get('/logout', 'AuthController@logout');
 });

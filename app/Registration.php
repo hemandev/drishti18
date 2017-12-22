@@ -8,11 +8,10 @@ class Registration extends Model
 {
 
     protected $primaryKey = ['user_id', 'workshop_id'];
+    public    $incrementing = false;
 
-    /**
-     * Retrieve details of workshop registered for.
-     */
-    public function registered_workshops() {
+    public function workshop_details() {
         return $this->belongsTo('App\Workshop', 'workshop_id');
     }
+
 }
