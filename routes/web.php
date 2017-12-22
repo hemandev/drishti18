@@ -14,3 +14,10 @@
 Route::get('/', function() {
     return view('welcome');
 });
+
+Route::get('/login', 'AuthController@login');
+Route::get('/login/callback', 'AuthController@callback');
+
+Route::middleware(['facebook_auth'])->group(function() {
+    Route::get('/dashboard', 'DashboardController@index');
+});
