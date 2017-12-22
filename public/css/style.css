@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Raleway:100,100i,400,900);h1 {
+  font-family: "Pacifico", cursive;
+}
+
 .big-container {
   position: fixed;
   z-index: 10000;
@@ -10,6 +14,29 @@
   position: fixed;
   z-index: 1000000000;
   background-color: #1d1f21;
+}
+
+.event-header {
+  font-size: 80px;
+  margin-top: 250px;
+}
+
+.circle-content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100000000;
+}
+
+.event-button {
+  position: fixed;
+  width: 120px;
+  height: 50px;
+  top: 70%;
+  left: 45%;
+  z-index: 10000;
 }
 
 .sk-cube-grid {
@@ -116,6 +143,19 @@
           transform: rotate(-60deg);
 }
 
+.event-one-container {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  position: fixed;
+  padding: 0;
+  z-index: 100000;
+  background-image: url("../images/concert.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .img {
   position: fixed;
   left: 25px;
@@ -135,11 +175,24 @@
           transform: scale(1.1);
 }
 
+.close-btn {
+  background: none;
+  z-index: 1000000000;
+  border: none;
+  margin: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close-btn:focus {
+  outline: 0;
+}
+
 #bt {
   background: none;
   position: fixed;
   bottom: 30px;
-  right: 0px;
+  right: 0;
   left: 0;
   z-index: 1000000000;
   width: 48px;
@@ -206,7 +259,7 @@ h1 span {
   vertical-align: -80%;
 }
 
-.heading .char1 {
+.event-head .char1 {
   transform: rotate(7.5deg);
   -webkit-transform: rotate(7.5deg);
   -moz-transform: rotate(7.5deg);
@@ -216,14 +269,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char1:hover {
+.event-head .char1:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char2 {
+.event-head .char2 {
   transform: rotate(15deg);
   -webkit-transform: rotate(15deg);
   -moz-transform: rotate(15deg);
@@ -233,14 +286,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char2:hover {
+.event-head .char2:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char3 {
+.event-head .char3 {
   transform: rotate(22.5deg);
   -webkit-transform: rotate(22.5deg);
   -moz-transform: rotate(22.5deg);
@@ -250,14 +303,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char3:hover {
+.event-head .char3:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char4 {
+.event-head .char4 {
   transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -267,14 +320,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char4:hover {
+.event-head .char4:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char5 {
+.event-head .char5 {
   transform: rotate(37.5deg);
   -webkit-transform: rotate(37.5deg);
   -moz-transform: rotate(37.5deg);
@@ -284,14 +337,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char5:hover {
+.event-head .char5:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char6 {
+.event-head .char6 {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -301,14 +354,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char6:hover {
+.event-head .char6:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char7 {
+.event-head .char7 {
   transform: rotate(52.5deg);
   -webkit-transform: rotate(52.5deg);
   -moz-transform: rotate(52.5deg);
@@ -318,14 +371,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char7:hover {
+.event-head .char7:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char8 {
+.event-head .char8 {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -335,14 +388,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char8:hover {
+.event-head .char8:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char9 {
+.event-head .char9 {
   transform: rotate(67.5deg);
   -webkit-transform: rotate(67.5deg);
   -moz-transform: rotate(67.5deg);
@@ -352,14 +405,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char9:hover {
+.event-head .char9:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char10 {
+.event-head .char10 {
   transform: rotate(75deg);
   -webkit-transform: rotate(75deg);
   -moz-transform: rotate(75deg);
@@ -369,14 +422,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char10:hover {
+.event-head .char10:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char11 {
+.event-head .char11 {
   transform: rotate(82.5deg);
   -webkit-transform: rotate(82.5deg);
   -moz-transform: rotate(82.5deg);
@@ -386,14 +439,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char11:hover {
+.event-head .char11:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char12 {
+.event-head .char12 {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -403,14 +456,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char12:hover {
+.event-head .char12:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char13 {
+.event-head .char13 {
   transform: rotate(97.5deg);
   -webkit-transform: rotate(97.5deg);
   -moz-transform: rotate(97.5deg);
@@ -420,14 +473,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char13:hover {
+.event-head .char13:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char14 {
+.event-head .char14 {
   transform: rotate(105deg);
   -webkit-transform: rotate(105deg);
   -moz-transform: rotate(105deg);
@@ -437,14 +490,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char14:hover {
+.event-head .char14:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char15 {
+.event-head .char15 {
   transform: rotate(112.5deg);
   -webkit-transform: rotate(112.5deg);
   -moz-transform: rotate(112.5deg);
@@ -454,14 +507,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char15:hover {
+.event-head .char15:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char16 {
+.event-head .char16 {
   transform: rotate(120deg);
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -471,14 +524,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char16:hover {
+.event-head .char16:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char17 {
+.event-head .char17 {
   transform: rotate(127.5deg);
   -webkit-transform: rotate(127.5deg);
   -moz-transform: rotate(127.5deg);
@@ -488,14 +541,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char17:hover {
+.event-head .char17:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char18 {
+.event-head .char18 {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -505,14 +558,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char18:hover {
+.event-head .char18:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char19 {
+.event-head .char19 {
   transform: rotate(142.5deg);
   -webkit-transform: rotate(142.5deg);
   -moz-transform: rotate(142.5deg);
@@ -522,14 +575,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char19:hover {
+.event-head .char19:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char20 {
+.event-head .char20 {
   transform: rotate(150deg);
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -539,14 +592,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char20:hover {
+.event-head .char20:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char21 {
+.event-head .char21 {
   transform: rotate(157.5deg);
   -webkit-transform: rotate(157.5deg);
   -moz-transform: rotate(157.5deg);
@@ -556,14 +609,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char21:hover {
+.event-head .char21:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char22 {
+.event-head .char22 {
   transform: rotate(165deg);
   -webkit-transform: rotate(165deg);
   -moz-transform: rotate(165deg);
@@ -573,14 +626,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char22:hover {
+.event-head .char22:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char23 {
+.event-head .char23 {
   transform: rotate(172.5deg);
   -webkit-transform: rotate(172.5deg);
   -moz-transform: rotate(172.5deg);
@@ -590,14 +643,14 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char23:hover {
+.event-head .char23:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading .char24 {
+.event-head .char24 {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -607,215 +660,19 @@ h1 span {
   transition: ease-out, .4s;
 }
 
-.heading .char24:hover {
+.event-head .char24:hover {
   -webkit-transition: ease-out, .4s;
   transition: ease-out, .4s;
   color: red;
   font-size: 46px;
 }
 
-.heading2 .char1 {
-  transform: rotate(15deg);
-  -webkit-transform: rotate(15deg);
-  -moz-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char1:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char2 {
-  transform: rotate(30deg);
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char2:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char3 {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char3:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char4 {
-  transform: rotate(60deg);
-  -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char4:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char5 {
-  transform: rotate(75deg);
-  -webkit-transform: rotate(75deg);
-  -moz-transform: rotate(75deg);
-  -ms-transform: rotate(75deg);
-  -o-transform: rotate(75deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char5:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char6 {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char6:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char7 {
-  transform: rotate(105deg);
-  -webkit-transform: rotate(105deg);
-  -moz-transform: rotate(105deg);
-  -ms-transform: rotate(105deg);
-  -o-transform: rotate(105deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char7:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char8 {
-  transform: rotate(120deg);
-  -webkit-transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  -o-transform: rotate(120deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char8:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char9 {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char9:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char10 {
-  transform: rotate(150deg);
-  -webkit-transform: rotate(150deg);
-  -moz-transform: rotate(150deg);
-  -ms-transform: rotate(150deg);
-  -o-transform: rotate(150deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char10:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char11 {
-  transform: rotate(165deg);
-  -webkit-transform: rotate(165deg);
-  -moz-transform: rotate(165deg);
-  -ms-transform: rotate(165deg);
-  -o-transform: rotate(165deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char11:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
-}
-
-.heading2 .char12 {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-}
-
-.heading2 .char12:hover {
-  -webkit-transition: ease-out, .4s;
-  transition: ease-out, .4s;
-  color: red;
-  font-size: 46px;
+.event-head {
+  font: 56px Monaco, MonoSpace;
+  -webkit-transform: scale(0.15) rotate(-55deg) translate(-250px, -110px);
+          transform: scale(0.15) rotate(-55deg) translate(-250px, -110px);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
 }
 
 body {
@@ -850,6 +707,10 @@ body {
   margin: auto;
   background-color: white;
   cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: linear, 500ms;
+  transition: linear, 500ms;
 }
 
 .fb-fab {
@@ -864,6 +725,10 @@ body {
   margin: auto;
   background-color: white;
   cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: linear, 500ms;
+  transition: linear, 500ms;
 }
 
 .insta-fab {
@@ -878,6 +743,65 @@ body {
   margin: auto;
   background-color: white;
   cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: linear, 500ms;
+  transition: linear, 500ms;
+}
+
+.mail-fab {
+  position: fixed;
+  top: 0;
+  bottom: 150px;
+  right: 45px;
+  z-index: 1000000000;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  background-color: white;
+  cursor: pointer;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: linear, 500ms;
+  transition: linear, 500ms;
+}
+
+.close-fab {
+  position: fixed;
+  top: 150px;
+  bottom: 0;
+  right: 45px;
+  z-index: 1000000000;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  background-color: white;
+  cursor: pointer;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: linear, 500ms;
+  transition: linear, 500ms;
+}
+
+.circle1-dupe {
+  background-color: #349FD7;
+  position: fixed;
+  z-index: 990;
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-transform: scale(6.2);
+          transform: scale(6.2);
+  opacity: 0;
 }
 
 .circle1 {

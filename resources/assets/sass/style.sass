@@ -1,6 +1,8 @@
 $color: red
 $font-size: 12em
 
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:100,100i,400,900')
+
 $blue1: #349FD7
 $blue2: #4dace8
 $blue3: #50C2F8
@@ -20,6 +22,8 @@ $violet1: #D74171
 $violet2: #C041A5
 $violet3: #A83593
 
+h1
+  font-family: "Pacifico", cursive
 .big-container
   position: fixed
   z-index: 10000
@@ -31,6 +35,37 @@ $violet3: #A83593
   position: fixed
   z-index: 1000000000
   background-color: #1d1f21
+
+$scale-factor: 1/6.3
+
+
+
+.event-header
+  font-size: 80px
+  margin-top: 250px
+
+
+
+.circle-content
+  position: fixed
+  bottom: 0
+  left: 0
+  top: 0
+  right: 0
+  z-index: 100000000
+
+
+//  margin-top: 220px
+
+.event-button
+  position: fixed
+  width: 120px
+  height: 50px
+  top: 70%
+  left: 45%
+  z-index: 10000
+
+
 
 @import "loader"
 
@@ -45,6 +80,18 @@ $violet3: #A83593
   width: 400px
   transform: rotate(-60deg)
 
+.event-one-container
+  width: 100%
+  height: 100%
+  max-height: 100%
+  margin: 0
+  position: fixed
+  padding: 0
+  z-index: 100000
+  background-image: url('//images/concert.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
 .img
   position: fixed
   left: 25px
@@ -57,11 +104,21 @@ $violet3: #A83593
     transition: ease-in 300ms
     transform: scale(1.1)
 
+.close-btn
+  background: none
+  z-index: 1000000000
+  border: none
+  margin: auto
+  text-decoration: none
+  cursor: pointer
+  &:focus
+    outline: 0
+
 #bt
   background: none
   position: fixed
   bottom: 30px
-  right: 0px
+  right: 0
   left: 0
   z-index: 1000000000
   width: 48px
@@ -132,8 +189,13 @@ h1 span
         color: red
         font-size: 46px
 
-+rotated-text(heading, 24)
-+rotated-text(heading2, 12)
+
++rotated-text(event-head, 24)
+
+.event-head
+  font: 56px Monaco, MonoSpace
+  transform: scale(.15) rotate(-55deg) translate(-250px, -110px)
+  transform-origin: bottom center
 body
   overflow: hidden
   background-color: $violet3
@@ -166,7 +228,7 @@ body
   border-radius: 50%
   transform: scale($scale)
 
-=fab($offset-top: 0, $offset-bottom: 0)
+=fab($offset-top: 0, $offset-bottom: 0, $scale: 1)
   position: fixed
   top: $offset-top
   bottom: $offset-bottom
@@ -178,6 +240,8 @@ body
   margin: auto
   background-color: white
   cursor: pointer
+  transform: scale($scale)
+  transition: linear, 500ms
 
 .ham-fab
   +fab(0, 0)
@@ -186,10 +250,23 @@ body
   +fab(150px, 0)
 
 .insta-fab
-  +fab(0,150px)
+  +fab(0, 150px)
+
+.mail-fab
+  +fab(0, 150px,0)
+
+.close-fab
+  +fab(150px, 0, 0)
+
+
+.circle1-dupe
+  +circle-element($blue1, 6.2, 990)
+  opacity: 0
 
 .circle1
   +circle-element(white, 6.2, 1000)
+
+
 
 .circle2
   +circle-element($blue1, 8.3, 900)

@@ -1,7 +1,76 @@
 $(window).on('load', function () {
 
+    $height = $(window).height()/2 - 120
+    // $('.event-header').css({marginTop: $height})
+
+    $('.event-one-container').hide()
 
     $('.another-cont').fadeOut('slow')
+
+
+    $('#event-header').lettering()
+
+
+    $('.event-button').click(function () {
+
+        $('.event-button').fadeOut()
+
+        $('.circle'+$count).velocity({scale: 100, opacity:0, display:'none'}, {
+            easing: 'linear', begin: function () {
+
+                $('.fb-fab,.insta-fab').velocity({scale: 0}, 200, "linear")
+                $('.event-one-container').fadeIn("slow")
+                $('.event-header').removeClass('text-dark').addClass('text-white')
+                $('.fa-arrow-up').fadeOut("slow")
+
+
+
+            }, complete: function () {
+
+                $('.event-header').velocity({scale:1.5, color: 'white'}, 500, "linear")
+
+
+                $('.close-fab,.mail-fab').velocity({scale: 1}, 200, "linear")
+
+
+            }, duration: 200
+        })
+    })
+
+
+    $('.close-btn').click(function () {
+
+        $('.circle'+$count).velocity({scale: 6.3, opacity: 1, display: 'block'}, {duration:300, easing: 'linear', complete:function () {
+
+
+            $('.event-one-container').fadeOut("slow")
+            $('.event-header').velocity({scale:1}, 500, "linear")
+            $('.event-header').removeClass('text-white').addClass('text-dark')
+            $('.event-button').fadeIn()
+            $('.fa-arrow-up').fadeIn("slow")
+
+            $('.close-fab,.mail-fab').velocity({scale: 0}, {
+                    duration: 200, easing: "linear", complete: function () {
+
+                        $('.fb-fab,.insta-fab').velocity({scale: 1}, 200, "linear")
+                    }
+                }
+
+
+            )
+
+
+        }})
+
+    })
+
+
+    var eventText = ['Drishti <br> 18','Drishti <br> Night', 'Workshops <br> CET', 'Rise <br> Again', 'CET <br> Life', 'Cryptex <br> CET', 'Amazing <br> VR  Race']
+
+
+
+    for (i = 8; i <= 19; i++)
+        $('.circle' + i).hide()
 
 
     var scale = {
@@ -26,12 +95,14 @@ $(window).on('load', function () {
         '.circle19': 42.3
     }
 
+
     $scrolloffset = 0
     $count = 1;
 
     $('#prev').hide()
 
     function scaleDown() {
+
 
         if ($count >= 13) {
             $count = 13
@@ -40,6 +111,25 @@ $(window).on('load', function () {
         else {
 
             $count++
+
+            $('.circle-content').velocity({opacity: 0, display: 'none'},{duration:500,easing: 'linear', complete: function () {
+
+                console.log("consolevalue"+eventText[$count-1])
+                $('.event-header').html(eventText[$count-1])
+
+
+            }})
+                .velocity({opacity: 1, display: 'block'},{duration:500,easing: 'linear'})
+
+
+            hideCount = $count + 6
+            for (i = hideCount; i <= 19; i++)
+                $('.circle' + i).hide()
+
+            foo = hideCount
+            $('.circle' + foo).show()
+
+
             if ($count == 2)
                 $('#prev').fadeIn('slow')
             if ($count == 13)
@@ -77,12 +167,31 @@ $(window).on('load', function () {
 
     function scaleUp() {
 
+
         if ($count <= 1) {
             $count = 1
 
         }
         else {
             $count--
+
+            $('.circle-content').velocity({opacity: 0, display: 'none'},{duration:500,easing: 'linear', complete: function () {
+
+                console.log("consolevalue"+eventText[$count-1])
+                $('.event-header').html(eventText[$count-1])
+
+
+            }})
+                .velocity({opacity: 1, display: 'block'},{duration:500,easing: 'linear'})
+
+
+            hideCount = $count + 6
+            for (i = hideCount; i <= 19; i++)
+                $('.circle' + i).hide()
+
+            foo = hideCount
+            $('.circle' + foo).show()
+
 
             if ($count == 1)
                 $('#prev').fadeOut('slow')
@@ -181,14 +290,14 @@ $(window).on('load', function () {
     })
 
 
-    $('#prev').click(function () {
+    $('#next').click(function () {
 
 
         scaleDown()
 
     })
 
-    $('#next').click(function () {
+    $('#prev').click(function () {
 
         scaleUp()
 
@@ -211,7 +320,7 @@ $(window).on('load', function () {
             scaleDown()
 
         }
-    }, 600));
+    }, 600))
 
 
-});
+})
