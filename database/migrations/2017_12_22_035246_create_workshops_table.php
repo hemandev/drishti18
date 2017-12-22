@@ -14,9 +14,13 @@ class CreateWorkshopsTable extends Migration
     public function up()
     {
         Schema::create('workshops', function (Blueprint $table) {
+            $deptIds = [
+                'CSE', 'CE', 'ME', 'EEE', 'FOSS', 'IEEE', 'ISTE',
+                'ROBO', 'EDC', 'MCA', 'IET', 'SAE', 'IIIE'
+            ];
             $table->increments('workshop_id');
-            $table->timestamps();
             $table->string('name', 255);
+            $table->enum('dept', $deptIds);
             $table->string('coords');
             $table->string('contact1');
             $table->string('contact2');
@@ -26,7 +30,8 @@ class CreateWorkshopsTable extends Migration
             $table->float('budget');
             $table->float('reg_fee');
             $table->float('expected_income');
-            $table->float('net_income');
+            $table->float('expected_profit');
+            $table->timestamps();
         });
     }
 

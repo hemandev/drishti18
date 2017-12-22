@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWorkshopDatesTable extends Migration
+class CreateRegistrationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,23 @@ class CreateWorkshopDatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('workshop_dates', function (Blueprint $table) {
+        Schema::create('registrations', function (Blueprint $table) {
+            $table->unsignedInteger('user_id');
             $table->unsignedInteger('workshop_id');
-            $table->date('wdate');
-            $table->primary(['workshop_id', 'wdate']);
+            $table->boolean('payment_done')->default(false);
+            $table->primary(['user_id', 'workshop_id']);
+            $table->timestamps();
+            $table->foreign('user_id')
+                ->references('user_id')
+                ->on('users')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
             $table->foreign('workshop_id')
                 ->references('workshop_id')
                 ->on('workshops')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });
-
     }
 
     /**
@@ -33,6 +39,6 @@ class CreateWorkshopDatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('workshop_dates');
+        Schema::dropIfExists('registrations');
     }
 }
