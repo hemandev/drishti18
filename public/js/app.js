@@ -32502,7 +32502,7 @@ Popper.Defaults = Defaults;
 /* 53 */
 /***/ (function(module, exports) {
 
-$(window).on('load', function () {
+$(function () {
 
     $('.another-cont').fadeOut('slow');
 
@@ -32528,6 +32528,11 @@ $(window).on('load', function () {
         '.circle19': 42.3
     };
 
+    var domRefs = {};
+    for (var i = 1; i < 20; ++i) {
+        domRefs['.circle' + i] = $('.circle' + i);
+    }
+
     $scrolloffset = 0;
     $count = 1;
 
@@ -32544,23 +32549,23 @@ $(window).on('load', function () {
             if ($count == 13) $('#next').fadeOut('slow');
 
             // console.log("down")
-            for (key in scale) {
+            for (var key in scale) {
 
-                console.log("key: " + key);
-                console.log("scale:" + Math.floor(scale[key]));
+                // console.log("key: " + key)
+                // console.log("scale:" + Math.floor(scale[key]))
 
-                val = Math.floor(scale[key]);
-                if (Math.floor(scale[key]) === 6) {
-                    // console.log("insie math")
+                if (Math.floor(scale[key]) <= 6) {
+                    // console.log("inside math")
                     scale[key] = 0;
-                    $(key).velocity({ 'scale': scale[key], 'easing': 'linear' }, 400);
+                    domRefs[key].velocity({ 'scale': scale[key], 'easing': 'linear' }, 400);
                 } else if (Math.floor(scale[key]) <= 0) {
-                    scale[key] = scale[key] - 2;
-                    $(key).velocity({ 'scale': 0, 'easing': 'linear' }, 400);
+                    // scale[key] = scale[key] - 2
+                    // domRefs[key].velocity({'scale': 0, 'easing': 'linear'}, 400)
+                    continue;
                 } else {
 
                     scale[key] = scale[key] - 2;
-                    $(key).velocity({ 'scale': scale[key], 'easing': 'linear' }, 400);
+                    domRefs[key].velocity({ 'scale': scale[key], 'easing': 'linear' }, 400);
                     // scale[key] = $val
                 }
             }
@@ -32578,23 +32583,23 @@ $(window).on('load', function () {
             if ($count == 12) $('#next').fadeIn('slow');
 
             // console.log("down")
-            for (key in scale) {
+            for (var key in scale) {
 
-                console.log("key: " + key);
-                console.log("scale:" + Math.floor(scale[key]));
+                // console.log("key: " + key)
+                // console.log("scale:" + Math.floor(scale[key]))
 
-                val = Math.floor(scale[key]);
-                if (Math.floor(scale[key]) === 0) {
+                var ivalue = Math.floor(scale[key]);
+                if (Math.floor(scale[key]) <= 0) {
                     // console.log("insie math")
                     scale[key] = 6.2;
-                    $(key).velocity({ 'scale': scale[key], 'easing': 'linear' }, 400);
+                    domRefs[key].velocity({ 'scale': scale[key], 'easing': 'linear' }, 400);
                 } else if (Math.floor(scale[key]) < 0) {
                     scale[key] = scale[key] + 2;
-                    $(key).velocity({ 'scale': 0, 'easing': 'linear' }, 400);
+                    domRefs[key].velocity({ 'scale': 0, 'easing': 'linear' }, 400);
                 } else {
 
                     scale[key] = scale[key] + 2;
-                    $(key).velocity({ 'scale': scale[key], 'easing': 'linear' }, 400);
+                    domRefs[key].velocity({ 'scale': scale[key], 'easing': 'linear' }, 400);
                     // scale[key] = $val
                 }
             }
@@ -32649,12 +32654,10 @@ $(window).on('load', function () {
     });
 
     $('#prev').click(function () {
-
         scaleDown();
     });
 
     $('#next').click(function () {
-
         scaleUp();
     });
 
@@ -32663,13 +32666,10 @@ $(window).on('load', function () {
         // deltaY obviously records vertical scroll, deltaX and deltaZ exist too
         if (event.originalEvent.deltaY < -200) {
             console.log("up" + event.originalEvent.deltaY);
-
             scaleUp();
-
             // wheeled up
         } else if (event.originalEvent.deltaY > 200) {
             console.log("down" + event.originalEvent.deltaY);
-
             scaleDown();
         }
     }, 600));
